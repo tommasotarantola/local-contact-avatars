@@ -1,0 +1,1 @@
+# local-contact-avatars
