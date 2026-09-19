@@ -1,0 +1,44 @@
+[
+  {
+    "namespace": "headerApi",
+    "functions": [
+      {
+        "name": "getVisibleMessages",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          {
+            "type": "integer",
+            "name": "tabId"
+          }
+        ]
+      },
+      {
+        "name": "renderRows",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          {
+            "type": "integer",
+            "name": "tabId"
+          },
+          {
+            "type": "string",
+            "name": "payloadJSON"
+          }
+        ]
+      },
+      {
+        "name": "waitForListChange",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          {
+            "type": "integer",
+            "name": "tabId"
+          }
+        ]
+      }
+    ]
+  }
+]

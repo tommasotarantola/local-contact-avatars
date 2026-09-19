@@ -1,0 +1,36 @@
+{
+  "manifest_version": 2,
+  "name": "Local Contact Avatars",
+  "version": "0.9.0",
+  "description": "Sender avatars from local contacts (circle) and exact-domain Domain Contacts (rounded square). No remote lookups.",
+  "author": "Derived from Auto Profile Picture by Noam Schmitt",
+  "icons": {
+    "128": "images/icon.svg",
+    "96": "images/icon.svg",
+    "64": "images/icon.svg",
+    "32": "images/icon.svg",
+    "16": "images/icon.svg"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "type": "module"
+  },
+  "permissions": ["messagesRead", "addressBooks"],
+  "experiment_apis": {
+    "headerApi": {
+      "schema": "api/headerApi.json",
+      "parent": {
+        "scopes": ["addon_parent"],
+        "paths": [["headerApi"]],
+        "script": "api/headerApi.js"
+      }
+    }
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "local-contact-avatars@tommasotarantola.github.io",
+      "strict_min_version": "153.1",
+      "strict_max_version": "153.*"
+    }
+  }
+}
