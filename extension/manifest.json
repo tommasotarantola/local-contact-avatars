@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Local Contact Avatars",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "Sender avatars from local contacts (circle) and exact-domain Domain Contacts (rounded square). No remote lookups.",
   "author": "Derived from Auto Profile Picture by Noam Schmitt",
   "icons": {
@@ -29,7 +29,7 @@
   "browser_specific_settings": {
     "gecko": {
       "id": "local-contact-avatars@tommasotarantola.github.io",
-      "strict_min_version": "153.1",
+      "strict_min_version": "153.0",
       "strict_max_version": "153.*"
     }
   }
