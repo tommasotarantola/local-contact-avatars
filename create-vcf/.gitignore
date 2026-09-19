@@ -1,0 +1,5 @@
+# Private data, never pushed: your list and your logos. The vcf in release/ is the published result.
+domains_map.csv
+images-source/*
+images-reworked/*
+review.md

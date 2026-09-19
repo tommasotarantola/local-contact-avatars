@@ -76,6 +76,23 @@ The xpi is a plain zip of `extension/`. No build step, no minified code, no bund
 - In the compact table view the bubble is 15 px: the rounded-square shape is visible, the border is not drawn.
 - The logos in the pack belong to their owners.
 
+## Building your own pack
+
+`create-vcf/create_vcf.py` turns a CSV and a folder of logos images into the vcf.
+Needs Python 3 and Pillow.
+
+1. Copy `create-vcf/domains_map.example.csv` to `domains_map.csv`.
+2. Put the logo in `create-vcf/images-source/`, add a row:
+   `domain,source_image,category`. Domain = exact sender domain from the
+   From header; subdomains are separate rows. The contact name comes from
+   the file name (`amazon_logo.png` -> Amazon).
+3. `python3 create-vcf/create_vcf.py`: writes `images-reworked/`,
+   `review.md` (check the images there) and the vcf in `release/`.
+
+Logos are not cropped: padded to a square with the corner color, scaled to
+108 px on a 128 px canvas. Too small means too much margin in the source.
+CSV, logos and review are in `.gitignore`.
+
 ## License
 
 MPL 2.0. Derived from [Auto Profile Picture](https://addons.thunderbird.net/thunderbird/addon/auto-profile-picture/) by Noam Schmitt; all online providers, the image cache and the contact-writing behavior were removed. See `LICENSE` and `extension/NOTICE.md`.
