@@ -15,11 +15,11 @@ Internet.
 
 ## Install
 
-From Thunderbird: menu > **Add-ons and Themes**, search "Local Contact Avatars", install, restart.
+Download `release/local-contact-avatars-0.9.1.xpi`.
+In Thunderbird open **Add-ons and Themes**, gear icon, **Install Add-on From File...**, then restart.
 
-Or install the file directly: download `release/local-contact-avatars-0.9.0.xpi`, then **Add-ons and Themes** > gear icon > **Install Add-on From File...**, restart.
-
-Thunderbird warns that the add-on has full access. That is because it uses an Experiment API to draw in the message list; it does not use that access for anything else (see below).
+The add-on is not on addons.thunderbird.net. Thunderbird has paused the review of new add-ons that use an Experiment API, and this one needs it: the message list is part of Thunderbird's own interface, and no WebExtension API can add anything to a row. Installing from file is the normal way here, Thunderbird does not require signed add-ons. 
+Updates are not automatic, new versions are published in the releases of this repository.
 
 ## Contacts
 
