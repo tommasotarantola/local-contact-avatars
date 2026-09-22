@@ -74,6 +74,7 @@ The xpi is a plain zip of `extension/`. No build step, no minified code, no bund
 
 - Thunderbird 153.x only. The Experiment API depends on message-list internals, so each new ESR needs a tested release.
 - In the compact table view the bubble is 15 px: the rounded-square shape is visible, the border is not drawn.
+- Developed and tested only on Linux, with Thunderbird 153 ESR. Nothing in the code is platform specific, so it should behave the same on Windows and macOS, but I have not verified it there.
 - The logos in the pack belong to their owners.
 
 ## Building your own pack
